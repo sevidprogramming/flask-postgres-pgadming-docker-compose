@@ -1,0 +1,18 @@
+docker-compose build
+docker-compose up
+
+localhos:80
+servers>create>Server
+    GENERAL
+        name: docker-posetgres
+    CONNECTION
+        Host name/address: db
+        Port 5432
+        UserName: postgres_user
+        Password:postgrespwd1
+
+docker-compose build
+docker-compose up
+
+http://localhost:5000/creartabla
+http://localhost:5000/insertar_datos
